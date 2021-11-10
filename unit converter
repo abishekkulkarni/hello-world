@@ -1,0 +1,67 @@
+/*
+author Abishek Kulkarni
+kms to miles ; inches to foot ; cms to inches ; pounds to kgs ; inches to meters
+*/
+#include <stdio.h>
+float kmsmiles(float a){
+    float  c;
+    printf("%0.2f kms is %0.2f miles.", a, c = a * 0.621371);
+    return 0;
+}
+float inchesfoot(float a){
+    float  c;
+    printf("%0.2f inches is %0.2f foot.", a, c = a * 0.0833333);
+    return 0;
+}
+float cmsinches(float a){
+    float  c;
+    printf("%0.2f cms is %0.2f inches.", a, c = a * 0.393701);
+    return 0;
+}
+float poundskgs(float a){
+    float  c;
+    printf("%0.2f pounds is %0.2f kgs.", a, c = a * 0.453592);
+    return 0;
+}
+float inchesmeters(float a){
+    float  c;
+    printf("%0.2f inches is %0.2f meters.", a, c = a * 0.0254);
+    return 0;
+}
+
+float main() {
+    float num, n;
+    printf("Enter 1 to convert kms to miles.\n");
+    printf("Enter 2 to convert inches to foot.\n");
+    printf("Enter 3 to convert cms to inches.\n");
+    printf("Enter 4 to convert pounds to kgs.\n");
+    printf("Enter 5 to convert inches to meters.\n");
+    printf("enter your option: ");
+    scanf("%f", &num);
+    if(num == 1){
+        printf("enter the value (in kms) to be converted to miles: ");
+        scanf("%f", &n);
+        kmsmiles(n);
+    }
+    if(num == 2){
+        printf("enter the value (in inches) to be converted to foot: ");
+        scanf("%f", &n);
+        inchesfoot(n);
+    }
+    if(num == 3){
+        printf("enter the value (in cms) to be converted to inches: ");
+        scanf("%f", &n);
+        cmsinches(n);
+    }
+    if(num == 4){
+        printf("enter the value (in pounds) to be converted to kgs: ");
+        scanf("%f", &n);
+        poundskgs(n);
+    }
+    if(num == 5){
+        printf("enter the value (in inches) to be converted to meters: ");
+        scanf("%f", &n);
+        inchesmeters(n);
+    }
+    return 0;
+}
